@@ -16,12 +16,6 @@ Computer Architecture - Spring 2022
   * Chat on Microsoft Teams: Mon-Fri 9:00 AM - 6:00 PM
   * Physical Office Hours: Mon/Wed 2:30 PM - 4:00 PM @ 5423 Sennott Square, or by appointment
 
-**Grading TA Information:**
-
-  * Name: TBD
-  * Primary mode of communication: "Regrade Request" on GradeScope
-  * Secondary mode of communication: Chat on Microsoft Teams
-  
 **Class GitHub repo:** https://www.github.com/wonsunahn/CS1541_Spring2022
 
 **Required Texts:**
