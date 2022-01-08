@@ -1,5 +1,5 @@
 # Syllabus - Spring 2022
-CS/COE 1541 Computer Architecture
+CS 1541 Computer Architecture
 
 ## WEEK 1 (Week of 10 JAN)
 
