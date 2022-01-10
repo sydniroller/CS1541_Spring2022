@@ -54,6 +54,7 @@ available on the [Syllabus](syllabus.md)).
   * Homework 3 - 5%
   * Homework 4 - 5%
 * Participation (15%)
+  * TopHat Attendance
   * TopHat lecture questions
   * Teams participation
 
