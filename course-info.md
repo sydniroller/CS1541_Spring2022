@@ -34,7 +34,7 @@ without having to physically manufacture the physical hardware.
 This class uses the _traditional class_ learning model, meaning lectures
 will happen during class time and assignments are expected to be done
 outside of class time.  The class schedule is available on the
-[Syllabus](syllabus.md)).
+[Syllabus](syllabus.md).
 
 ## Grading
 
