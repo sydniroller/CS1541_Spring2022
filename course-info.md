@@ -114,19 +114,9 @@ several ways you can participate:
 
 1. In-class
 
-    If you are in-person and you have a question, just interrupt me and
-interject.  If you are online unmute your mic and interject.  Raising your hand
-is optional (whether physical or virtual).  If I miss your raised hand, it's
-not because I want to ignore you but it's probably because there are too many
-things going on at the same time.  So interrupting me is not rude, it's a
-necessity.
-
-    If you don't have a mic or other circumstances prevent you from asking on
-Zoom, please post the question on Teams.  Use the "Posts" tab on the "General"
-channel.  I want you to use Teams instead of Zoom because Zoom chats don't get
-recorded and they evaporate when the meeting ends.  Teams posts and chats are
-persistent and can be viewed by asynchronous students later on.  I wlll be
-monitoring Teams posts during the lecture.
+    If you have a question, please interrupt me and interject.  Interrupting
+me is not rude, it's a necessity.  I have a tendency to keep talking if not
+interrupted.
 
 2. Offline
 
