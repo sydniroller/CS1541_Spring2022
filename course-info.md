@@ -31,14 +31,10 @@ you can use to get around those constraints.  You will also learn how to build
 software simulators that evaluate and estimate the performance of a CPU design,
 without having to physically manufacture the physical hardware.
 
-This class uses the _traditional class_ learning model, meaning lectures will
-happen during class time and assignments are expected to be done outside of
-class time.  You can choose to either attend classes in-person, synchronously
-online, or asynchronously online according to the Flex@Pitt model.  Synchronous
-attendance of classes (either in-person or online) is encouraged but not
-required.  If you don't attend the lecture, please view the in-class discussion
-through Panopto recordings available on Canvas.  The class schedule is
-available on the [Syllabus](syllabus.md)).
+This class uses the _traditional class_ learning model, meaning lectures
+will happen during class time and assignments are expected to be done
+outside of class time.  The class schedule is available on the
+[Syllabus](syllabus.md)).
 
 ## Grading
 
