@@ -111,7 +111,7 @@ CS 1541 Computer Architecture
 
 * Class 2: Review for Midterm 2
 
-* Homework 4 released
+* Homework 4 released on GradeScope
 
 ## WEEK 16 (Week of 25 APR)
 
