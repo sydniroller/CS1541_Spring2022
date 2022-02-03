@@ -187,3 +187,21 @@ compromising your integrity._
 
 _4. If you have a question that does require showing your work, please initiate
 a chat with your instructor on Teams or come to office hours._
+
+## Back to In-Person
+
+The unversity policy is to be back to full in-person.  That means we are back
+to pre-COVID rules concerning remote classes: it does not exist, as a general
+rule.  There are two exceptions:
+
+_1. If you have to quarantine due to contact with COVID.  Either you have a
+positive test result or you are waiting for test results._
+
+_2. If you have a family or medical emergency that would cause you to miss
+class.  Rather than miss class, if you are able to participate over Zoom, I
+will allow it._
+
+For the above exceptions, I will create Zoom sessions on demand.  These Zoom
+sessions are only available to affected students and are protected by a
+password which is distributed individually.  Please notify me as soon as you
+are affected so I can make arrangements.
