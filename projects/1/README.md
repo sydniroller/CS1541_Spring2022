@@ -26,7 +26,7 @@
 Spring Semester 2022 - Project 1
 
 Please accept Project 1 on **GitHub Classroom** using the following link:
-TBD
+https://classroom.github.com/a/jREHYDcC
 
 * DUE: Mar 16 (Wednesday), 2022 4:30 PM 
 
