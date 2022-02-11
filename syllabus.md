@@ -71,7 +71,7 @@ CS 1541 Computer Architecture
 
 ## WEEK 10 (Week of 14 MAR)
 
-* Class 1: The Memory Heirarchy and Midterm 1 discussion
+* Class 1: The Memory Hierarchy and Midterm 1 discussion
 
 * Class 2: The Memory Hierarchy (cont'd)
 
@@ -89,7 +89,7 @@ CS 1541 Computer Architecture
 
 * Class 2: Direct mapped caches / Set associative caches
 
-* Homework 3 released due Nov. 12 at 5:00 PM on GradeScope
+* Homework 3 released on GradeScope
 
 ## WEEK 13 (Week of 4 APR)
 
@@ -111,7 +111,7 @@ CS 1541 Computer Architecture
 
 * Class 2: Review for Midterm 2
 
-* Homework 4 released due Dec. 4 at 11:59 PM on GradeScope
+* Homework 4 released on GradeScope
 
 ## WEEK 16 (Week of 25 APR)
 
