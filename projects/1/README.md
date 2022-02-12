@@ -837,7 +837,14 @@ sudo apt install ddd
 
 ### For Mac
 
-You will have to use Homebrew:
+First you will have to install the XCode commandline developer tools if you
+haven't already:
+
+```
+xcode-select --install
+```
+
+Then you will have to use Homebrew to install DDD:
 
 ```
 brew install ddd
