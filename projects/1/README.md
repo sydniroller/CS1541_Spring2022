@@ -838,18 +838,48 @@ sudo apt install ddd
 
 ### For Mac
 
-First you will have to install the XCode commandline developer tools if you
-haven't already:
+Unfortunately, I gdb (and by extension ddd) does not run reliably on MacOS.
+It bas been a long standing problem but has still not been solved:
+https://sourceware.org/bugzilla/show_bug.cgi?id=24069
 
+At least, you can still compile and test the program on your local machine.
+If you want to use gdb or ddd, you will have to do it remotely on thoth.  At
+below are the steps to install the necessary packages.
+
+First you will have to install the XCode commandline developer tools, which
+includes gcc and g++:
 ```
 xcode-select --install
 ```
 
-Then you will have to use Homebrew to install DDD:
+Then use Homebrew to install all required libraries:
+```
+brew install glib
+```
 
+You will also have to add some modifications to the Makefile:
+
+Change the COPT line from:
 ```
-brew install ddd
+COPT = -g -Wall -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include/
 ```
+to:
+```
+COPT = -g -Wall -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include/ -I/usr/local/opt/glib/include/glib-2.0/ -I/usr/local/opt/glib/lib/glib-2.0/include/
+```
+
+Also change the LOPT line from:
+```
+LOPT = -lglib-2.0
+```
+to
+```
+LOPT = -lglib-2.0 -L/usr/local/opt/glib/lib/
+```
+
+Lastly, replace all mentions of "five_stage_solution" to
+"five_stage_solution.mac".  The five_stage_solution binary was compiled on
+thoth (a Linux machine) which cannot run on a Mac.
 
 ## DDD hang issue solution
 
