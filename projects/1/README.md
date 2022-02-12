@@ -29,6 +29,7 @@
   * [Using DDD by installing on local machine](#using-ddd-by-installing-on-local-machine)
     + [For Windows 10 WSL or Linux](#for-windows-10-wsl-or-linux)
     + [For Mac](#for-mac)
+  * [DDD hang issue solution](#ddd-hang-issue-solution)
 
 
 # CS/COE 1541 - Introduction to Computer Architecture
@@ -849,3 +850,22 @@ Then you will have to use Homebrew to install DDD:
 ```
 brew install ddd
 ```
+
+## DDD hang issue solution
+
+There is a long standing bug with DDD where it can hang indefinitely when
+launched for the second time.  It is because of some configuration settings
+that get auto-generated the first time it is launched.  The solution is to edit
+the ~/.ddd/init file to change the following line:
+
+```
+set extended-prompt not set\n\
+```
+
+To this line:
+
+```
+set extended-prompt (gdb) \n\
+```
+
+Reference: https://savannah.gnu.org/bugs/index.php
