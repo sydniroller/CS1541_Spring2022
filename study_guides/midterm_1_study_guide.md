@@ -186,3 +186,7 @@ Here are the key topics to study in preparation for the test.
 * Be able to explain what roles the instruction queue and retirement register file have in precise exceptions
   * Instruction queue: guarantees that instructions commit their state in program order
   * Retirement register file: holds the current values of architectural registers at all times
+* Be able to explain how WAR and WAW dependencies are elided using the store queue.
+* Be able to simulate the operation of operation of a load / store queue given a memory access stream.
+* Be able to compare VLIWs and SuperScalars on their ability to exploit ILP.
+* Be able to compare VLIWs and SuperScalars on power efficiency.
