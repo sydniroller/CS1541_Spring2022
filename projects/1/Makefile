@@ -1,7 +1,7 @@
 TARGETS = five_stage trace_reader trace_generator
 
 SHORT_TRACES_DIR = /afs/cs.pitt.edu/courses/1541/short_traces
-GNUPLOT = /afs/cs.pitt.edu/courses/1541/gnuplot-5.2.8/bin/gnuplot
+GNUPLOT = /afs/cs.pitt.edu/courses/1541/gnuplot-5.2.8-thoth/bin/gnuplot
 
 SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:%.c=%.o)
