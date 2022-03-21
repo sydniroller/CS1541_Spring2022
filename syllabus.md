@@ -102,15 +102,15 @@ CS 1541 Computer Architecture
 
 * Class 2: Split vs. unified caches / Private vs. shared caches / Prefetching
 
+* Homework 3 due on GradeScope
+ 
+* Project 2 released on GradeScope
+
 ## WEEK 14 (Week of 11 APR)
 
 * Class 1: Virtual Memory / TLBs
 
 * Class 2: Cache Coherence / SIMD
-
-* Homework 3 due on GradeScope
- 
-* Project 2 released on GradeScope
 
 ## WEEK 15 (Week of 18 APR)
 
