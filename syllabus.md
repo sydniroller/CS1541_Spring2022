@@ -88,13 +88,13 @@ CS 1541 Computer Architecture
 
 * Class 2: Temporal vs. spatial Locality / Cold vs. capacity misses
 
+* Homework 3 released on GradeScope
+
 ## WEEK 12 (Week of 28 MAR)
 
 * Class 1: Evaluating cache design and AMAT / Cache block size
 
 * Class 2: Direct mapped caches / Set associative caches
-
-* Homework 3 released on GradeScope
 
 ## WEEK 13 (Week of 4 APR)
 
@@ -108,6 +108,8 @@ CS 1541 Computer Architecture
 
 * Class 2: Cache Coherence / SIMD
 
+* Homework 3 due on GradeScope
+ 
 * Project 2 released on GradeScope
 
 ## WEEK 15 (Week of 18 APR)
