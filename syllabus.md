@@ -96,6 +96,8 @@ CS 1541 Computer Architecture
 
 * Class 2: Direct mapped caches / Set associative caches
 
+* Project 2 released on GradeScope
+
 ## WEEK 13 (Week of 4 APR)
 
 * Class 1: Write back vs write through caches
@@ -103,8 +105,6 @@ CS 1541 Computer Architecture
 * Class 2: Split vs. unified caches / Private vs. shared caches / Prefetching
 
 * Homework 3 due on GradeScope
- 
-* Project 2 released on GradeScope
 
 ## WEEK 14 (Week of 11 APR)
 
