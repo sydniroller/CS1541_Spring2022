@@ -21,7 +21,7 @@
 Spring Semester 2022 - Project 2
 
 Please accept Project 2 on **GitHub Classroom** using the following link:
-TBD
+https://classroom.github.com/a/rcSwVzlv
 
 * DUE: Apr 29 (Friday), 2022 11:59 PM
 
