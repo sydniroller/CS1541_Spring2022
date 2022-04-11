@@ -214,7 +214,7 @@ submit to the GradeScope "Homework 4" link.  Since the GradeScope machines do
 not have GPUs it will not be autograded, but it will be graded manually
 according to the rubric explained on the GradeScope assignment.
 
-(30 points) If you complete Task 3 as well, you can now submit to the
+(20 points) If you complete Task 3 as well, you can now submit to the
 GradeScope "Homework 4 Extra Credit" link.  In order for you to do the extra
 credit, you must have been done with the rest of Homework 4.
 
