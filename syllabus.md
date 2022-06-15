@@ -131,8 +131,6 @@ CS 1541 Computer Architecture
   
 ## WEEK 16 (Week of 25 APR)
 
-* Midterm 2 on GradeScope: TBD
-
 * Homework 4 Extra Credit due on GradeScope
 
 * Project 2 due on GradeScope
