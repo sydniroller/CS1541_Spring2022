@@ -89,6 +89,7 @@ void copy_host_to_device(float* A, float* B, int n)
 	double time_start, time_end;
 	struct timeval tv;
 	struct timezone tz;
+	int nBytes;
 
 	gettimeofday (&tv ,   &tz);
 	time_start = (double)tv.tv_sec + (double)tv.tv_usec / 1000000.0;
@@ -97,6 +98,20 @@ void copy_host_to_device(float* A, float* B, int n)
 	// 1. Allocate GPU memory for d_A, d_B, d_C using cudaMalloc.
 	// 2. Copy input arrays A, B to d_A, d_B using cudaMemcpy.
 	// 3. Call cudaMemset on array d_C to initialize all elements to 0.
+
+	// allocate gpu memory for d_A, d_B, d_C using cudaMalloc
+	int matrix_size = n * n;
+	nBytes = matrix_size * sizeof(float);
+	cudaMalloc((void **) &d_A, nBytes);
+	cudaMalloc((void **) &d_B, nBytes);
+	cudaMalloc((void **) &d_C, nBytes);
+
+	// copy input arrays A, B to d_A, d_B using cudaMemcpy
+	cudaMemcpy(d_A, A, nBytes, cudaMemcpyHostToDevice);
+	cudaMemcpy(d_B, B, nBytes, cudaMemcpyHostToDevice);
+
+	// call cudaMemset on array d_C to initialize all elements to 0
+	cudaMemset(d_C, 0, nBytes);
 
 	gettimeofday (&tv ,   &tz);
 	time_end = (double)tv.tv_sec + (double)tv.tv_usec / 1000000.0;
@@ -112,6 +127,7 @@ void copy_device_to_host(float* C, int n)
 	double time_start, time_end;
 	struct timeval tv;
 	struct timezone tz;
+	int nBytes;
 
 	gettimeofday (&tv ,   &tz);
 	time_start = (double)tv.tv_sec + (double)tv.tv_usec / 1000000.0;
@@ -119,6 +135,16 @@ void copy_device_to_host(float* C, int n)
 	// TODO:
 	// 1. Copy result array d_C to C using cudaMemcpy.
 	// 2. Free memory allocated for d_A, d_B, d_C using cudaFree.
+
+	// copy result array d_C to C using cudaMemcpy
+	int matrix_size = n * n;
+	nBytes = matrix_size * sizeof(float);
+	cudaMemcpy(C, d_C, nBytes, cudaMemcpyDeviceToHost);
+
+	// free memory allocated for d_A, d_B, d_C using cudaFree
+	cudaFree(d_A);
+	cudaFree(d_B);
+	cudaFree(d_C);
 
 	gettimeofday (&tv ,   &tz);
 	time_end = (double)tv.tv_sec + (double)tv.tv_usec / 1000000.0;
@@ -183,6 +209,7 @@ int main(int argc, char** argv)
 
 		// TODO: Call the kernel
 		// Call mm_gpu <<< >>> ( ) with the appropriate grid and thread block layouts.
+		mm_gpu <<<2, 2>>>(d_C, d_A, d_B, matrix_size);
 
 		gpuErrchk( cudaPeekAtLastError() );
 		gpuErrchk( cudaDeviceSynchronize() );
