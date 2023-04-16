@@ -209,7 +209,7 @@ int main(int argc, char** argv)
 
 		// TODO: Call the kernel
 		// Call mm_gpu <<< >>> ( ) with the appropriate grid and thread block layouts.
-		mm_gpu <<<block_size, N>>>(d_C, d_A, d_B, matrix_size);
+		mm_gpu <<<(1, block_size), (1, 1)>>>(d_C, d_A, d_B, matrix_size);
 
 		gpuErrchk( cudaPeekAtLastError() );
 		gpuErrchk( cudaDeviceSynchronize() );
