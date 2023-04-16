@@ -37,6 +37,15 @@ __global__ void mm_gpu(float* C, float* A, float* B, int n)
 	// TODO:
 	// Implement the naive GPU matrix multiplication shown on the lecture slides.
 	// Remove the printf below when you don't need it.  It's just for demonstration.
+	/*
+	for (int i=0; i<n; i++){
+		for (int j=0; j<n; j++){
+			for (int k=0; k<n; k++){
+				C[i*n + j] += A[i*n + k] * B[k*n +j];
+			}
+		}
+	}
+	*/
 	printf("Grid(%d, %d) Block (%d, %d)\n", blockIdx.x, blockIdx.y, threadIdx.x, threadIdx.y);
 }
 
