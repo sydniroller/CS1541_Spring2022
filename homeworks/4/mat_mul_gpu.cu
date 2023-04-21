@@ -46,7 +46,14 @@ __global__ void mm_gpu(float* C, float* A, float* B, int n)
 		}
 	}
 	*/
-	printf("Grid(%d, %d) Block (%d, %d)\n", blockIdx.x, blockIdx.y, threadIdx.x, threadIdx.y);
+	float Cvalue = 0;
+	int i = blockIdx.y * blockDim.y +  threadIdx.y;
+	int j = blockIdx.x * blockDim.x +  threadIdx.x;
+	for (int k = 0; k < n; ++k)
+		Cvalue += A[i * n + k] * B[k * n + j];
+	C[i * n + j] = Cvalue;
+
+	//printf("Grid(%d, %d) Block (%d, %d)\n", blockIdx.x, blockIdx.y, threadIdx.x, threadIdx.y);
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -218,7 +225,9 @@ int main(int argc, char** argv)
 
 		// TODO: Call the kernel
 		// Call mm_gpu <<< >>> ( ) with the appropriate grid and thread block layouts.
-		mm_gpu <<<(block_size, block_size), (N, 1)>>>(d_C, d_A, d_B, matrix_size);
+		dim3 dimBlock(block_size, block_size);
+		dim3 dimGrid(n / dimBlock.x, n / dimBlock.y);
+		mm_gpu <<<dimGrid, dimBlock>>>(d_C, d_A, d_B, matrix_size); // could b matrix_size instead of n
 
 		gpuErrchk( cudaPeekAtLastError() );
 		gpuErrchk( cudaDeviceSynchronize() );
