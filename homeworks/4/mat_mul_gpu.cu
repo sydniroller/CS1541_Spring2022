@@ -226,7 +226,7 @@ int main(int argc, char** argv)
 		// TODO: Call the kernel
 		// Call mm_gpu <<< >>> ( ) with the appropriate grid and thread block layouts.
 		dim3 dimBlock(block_size, block_size);
-		dim3 dimGrid(n / dimBlock.x, n / dimBlock.y);
+		dim3 dimGrid(matrix_size / dimBlock.x, matrix_size / dimBlock.y);
 		mm_gpu <<<dimGrid, dimBlock>>>(d_C, d_A, d_B, matrix_size); // could b matrix_size instead of n
 
 		gpuErrchk( cudaPeekAtLastError() );
